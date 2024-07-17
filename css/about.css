@@ -1,0 +1,1001 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+/* font-family: "Baumans", system-ui; */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+/* font-family: "Aclonica", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baumans", system-ui;
+}
+
+.all {
+  width: 100%;
+  height: 100%;
+  background: #DEFFEE;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/***** NAVIGATION_BAR *****/
+
+.header1 {
+  width: 100%;
+  padding: 30px 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.header1 .logo1 h1 {
+  font-size: 30px;
+  color: #000;
+  display: flex;
+  cursor: pointer;
+}
+
+.header1 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header1 ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  font-family: "Baumans", system-ui;
+  padding: 5px 15px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.header1 ul a:hover {
+  background: #000;
+  color: rgb(233, 241, 239);
+}
+
+.header1 ul i {
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.header1 ul i:hover {
+  opacity: 0.7;
+}
+
+.header1 ul a:nth-child(6) {
+  color: #fff;
+  background: #000;
+  color: rgb(233, 241, 239);
+  padding: 10px 40px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.header1 ul a:nth-child(6):hover 
+button {
+  background: transparent;
+  color: #000;
+}
+
+.header1 ul a:nth-child(6):hover  {
+  border: 1px solid #000;
+  background: transparent;
+}
+
+.header1 ul a button {
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/***** SMALL_NAVIGATION_BAR *****/
+
+.small_header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: none;
+  overflow: hidden;
+}
+
+.small_header .header_head {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #DEFFEE;
+  box-shadow: 4px 0 16px rgba(67, 172, 120, 0.3);
+  overflow: hidden;
+  z-index: 109;
+}
+
+.small_header .header_head .sm_logo {
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.small_header .header_head 
+.sm_logo h1 {
+  display: flex;
+}
+
+.small_header .header_head .menu {
+  width: 80px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.small_header .header_head .menu .icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_header .header_head .menu .icons .i {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.small_header .header_head 
+.menu .icons .menu_icon {
+  width: 60px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.small_header .header_head 
+.menu .icons .cross_icon {
+  position: relative;
+  top: -425px;
+}
+
+.small_header .menu_list {
+  width: 424px;
+  height: 100vh;
+  position: fixed;
+  right: -425px;
+  top: 80px;
+  box-shadow: 4px 0 16px rgba(67, 172, 120, 0.3);
+  background: #DEFFEE;
+  z-index: 99;
+}
+
+.small_header .menu_list ul {
+  list-style: none;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.small_header .menu_list ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+  transition: 1s ease;
+}
+
+.small_header .menu_list ul li a:hover {
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.small_header .menu_list ul li a span {
+  font-family: "Aclonica", sans-serif;
+}
+
+.small_header .menu_list ul a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+}
+
+.small_header .menu_list ul a .singUpBtn_sm {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.small_header .menu_list ul a 
+.singUpBtn_sm:hover {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background: transparent;
+  color: #000;
+}
+
+.small_header .menu_list ul a .singUpBtn_sm span {
+  font-family: "Aclonica", sans-serif;
+}
+
+.small_header .menu_list ul a .singUpBtn_sm i {
+  margin-left: 5px;
+}
+
+/***** ABOUT_HERO_SECTION *****/
+
+.about_hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.about_hero .heading1 h1 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.about_hero .heading1 h1:nth-child(2) {
+  margin-left: 180px;
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.about_hero .heading1 h1:nth-child(3) {
+  margin-left: 300px;
+}
+
+.about_hero .heading1 .bg_ani {
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  left: 0;
+  background: #43AC78;
+  filter: blur(20px);
+  z-index: 1;
+}
+
+.about_hero .school_summery {
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: lowercase;
+  z-index: 2;
+}
+
+/***** SCHOOL_PLACES_SECTION *****/
+
+.school_places {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.school_places .bg_place {
+  width: 100%;
+  height: 100vh;
+  background: #43AC78;
+  filter: blur(20px);
+  border-radius: 10% 10% 10% 10%;
+  z-index: -1;
+}
+
+.school {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.school .place_and_image {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.school_places .place_image {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.school_places .place_image .main_img {
+  width: 95%;
+  height: 100%;
+  margin: 40px 20px;
+  border-radius: 20px 20px 20px 20px;
+  object-fit: cover;
+}
+
+.school_places .place_details {
+  width: 50%;
+  height: 100%;
+  padding: 40px 20px;
+   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.school_places .place_details h2 {
+  font-family: "Aclonica", sans-serif !important;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.school_places .place_details 
+.image_description {
+  width: 95%;
+  position: relative;
+  top: 20px;
+  font-family: 'Poppins', sans-serif !important; 
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.school_places .all_place_images {
+  width: 100%;
+  height: 30vh;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  z-index: 4;
+}
+
+.school_places 
+.all_place_images::-webkit-scrollbar {
+  display: none;
+}
+
+.school_places .all_place_images
+.image {
+  width: 250px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  margin: 0 35px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.school_places .all_place_images
+.image img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: all 0.5s linear;
+  z-index: 1;
+}
+
+school_places .all_place_images 
+.image:hover {
+  transform: scale(1.2);
+}
+
+/***** PLACE_SUMMERY_SECTION *****/
+
+.place_summery {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.place_summery h1 {
+  font-family: "Aclonica", sans-serif;
+  white-space: nowrap;
+  font-size: 30vw;
+  background: rgba(67, 172, 120, 0.4);
+  transform: translateX(45%);
+}
+
+/***** SCHOOL_MEMBERS_SECTION *****/
+
+.school_members {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 300px;
+  position: relative;
+}
+
+.school_members .member_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.school_members .member_heading h1 {
+  font-family: "Aclonica", sans-serif;
+  font-size: 50px;
+}
+
+.school_members .member_heading h1 span {
+  font-size: 220px;
+  color: #43AC78;
+  display: inline-flex;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 120px;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.school_members .all_members {
+  position: relative;
+  top: 80px;
+}
+
+.school_members .all_members
+.member {
+  width: 200px;
+  height: 220px;
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.6);
+  margin: 20px;
+  position: relative;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+}
+
+.school_members .all_members
+.member:hover {
+  transform: scale(1.1);
+}
+
+.school_members .all_members
+.member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.school_members .all_members
+.member span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  font-family: "Aclonica", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  display: none;
+  transition: all 0.5s linear;
+  z-index: 1;
+}
+
+.school_members .all_members
+.member:hover span {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+}
+
+.school_members .member_details {
+  width: 600px;
+  height: 800px;
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.6);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: rgba(222, 255, 238, 1);
+  border-radius: 20px;
+  display: none;
+  overflow: hidden;
+}
+
+.school_members .member_details .cross 
+label i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  color: #000;
+  background: rgba(222, 255, 238, 1);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+  padding: 5px;
+  border-radius: 0 20px 0 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.school_members .member_details 
+.member_profile {
+  width: 220px;
+  height: 220px;
+  border: 2px solid rgba(67, 172, 120, 0.1);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+  border-radius: 50%;
+  margin-top: -150px;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+
+.school_members .member_details 
+.member_profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.school_members .member_details 
+.name_profetion {
+  margin-bottom: 50px;
+}
+
+.school_members .member_details
+.name_profetion h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.school_members .member_details 
+.name_profetion h4 {
+  font-size: 22px;
+  color: rgba(67, 172, 120, 1);
+  text-align: center;
+}
+
+.school_members .member_details 
+.member_info {
+  display: block;
+} 
+
+.school_members .member_details 
+.member_info .info  {
+  display: flex;
+  opacity: 0.6;
+}
+
+.school_members .member_details 
+.member_info .info  h5 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: 1px;
+} 
+
+.school_members .member_details 
+.member_info .info label {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+} 
+
+.school_members .member_details 
+.member_info .info label i {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.school_members .member_details 
+.member_info .info label .bd {
+  font-size: 23px;
+}
+  
+.school_members .member_details 
+.member_info .mgl {
+  margin-left: -3px;
+}
+
+/***** SCHOOL_APPLICATION_SECTION *****/
+
+.application {
+  width: 100%;
+  height: 150vh;
+  background: rgba(67, 172, 120, 0.9);
+  color: #fff;
+  padding-top: 180px;
+  overflow: hidden;
+}
+
+.application h1 {
+  font-size: 30px;
+}
+
+.application p {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.application .application_heading {
+  overflow: hidden;
+}
+
+.application .application_heading h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+}
+
+.application .application_heading h1 i {
+  margin-left: 20px;
+}
+
+.application .all_apli {
+  margin-top: 200px;
+}
+
+.application .appli {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 10%;
+}
+
+.application .appli h1 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.application .appli p {
+  width: 80%;
+  height: auto;
+}
+
+.application .appli  .apli_img {
+  width: 250px;
+  height: 250px;
+  background: rgba(67, 172, 120, 0.3);
+  border-radius: 20px;
+}
+
+.application .appli .apli_img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.application .appli1 {
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 10%;
+  margin-top: 50px;
+}
+
+.application .appli1 h1 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/***** MOBILE_DEVICE *****/
+
+@media only screen and (max-width: 760px) {
+  
+  .header1 {
+    display: none;
+  }
+  
+  .small_header {
+    display: block;
+  }
+  
+ /***** ABOUT_HERO_RESPONSIVE *****/
+  
+  .about_hero {
+    width: 100%;
+    height: 100vh;
+   }
+  
+  .about_hero .heading1 h1 span {
+    font-size: 35px;
+  }
+  
+  .about_hero .heading1 h1:nth-child(1) {
+    position: relative;
+    left: 7%;
+  }
+  
+  .about_hero .heading1 h1:nth-child(2) {
+    position: relative;
+    right: 2%;
+  }
+  
+ .about_hero .heading1 h1:nth-child(3) {
+    position: relative;
+    right: 7%;
+  }
+  
+  .school_summery p {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    left: -5px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+   
+ /***** SCHOOL_PLACE_RESPONSIVE *****/
+ 
+  .school {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+ 
+  .place_and_image {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .place_and_image .place_image {
+    width: 95%;
+    height: 40vh;
+    margin-left: -20px;
+  }
+  
+  .place_and_image .place_details {
+    width: 100%;
+    height: 25vh;
+    margin-top: -30px;
+  }
+  
+  .place_and_image .place_details h2  {
+    font-size: 20px;
+  }
+  
+  .place_and_image .place_details .image_description  {
+    font-size: 14px;
+  }
+  
+  .all_place_images {
+    margin-top: -20px;
+    padding-left: 10px;
+  }
+  
+  .school .all_place_images
+  .image {
+    width: 150px;
+    height: 100px;
+    margin: 0 15px;
+  }
+  
+ /***** SCHOOL_MEMBER_RESPONSIVE *****/
+ 
+  .school_members {
+    margin-top: -30px;
+    margin-bottom: 150px;
+  }
+  
+  .school_members .member_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .school_members .member_heading h1 {
+    margin-left: 35px;
+    font-size: 30px;
+  }
+  
+  .school_members .all_members {
+    margin-top: -160px;
+    margin-left: 10%;
+  }
+  
+  .school_members .all_members
+  .member {
+    width: 120px;
+    height: 140px;
+  }
+  
+  .school_members .member_details {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 160px;
+  }
+  
+  .school_members .member_details .cross 
+  label i {
+    font-size: 30px;
+  }
+  
+  .school_members .member_details 
+  .member_profile {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .school_members .member_details
+  .name_profetion h2 {
+    font-size: 20px;
+  }
+
+  .school_members .member_details 
+  .name_profetion h4 {
+    font-size: 16px;
+  }
+  
+  .school_members .member_details 
+  .member_info .info  h5 {
+    font-size: 14px;
+  } 
+
+  .school_members .member_details 
+  .member_info .info label i {
+    font-size: 12px;
+  }
+
+  .school_members .member_details 
+  .member_info .info label .bd {
+    font-size: 17px;
+  }
+
+ /***** SCHOOL_APPLICATION_RESPONSIVE *****/
+  
+  .application {
+    width: 100%;
+    height: 350vh;
+  }
+  
+  .application .application_heading h1 {
+    font-size: 25px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  
+  .application .application_heading h1 i {
+    margin-left: 5px;
+  }
+  
+  .application .appli {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    left: 10%;
+  }
+  
+  .application .appli .apli_img {
+    width: 60%;
+    height: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    position: relative;
+    left: -40px;
+  }
+  
+  .application .appli .apli_img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .application .appli h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .application .appli p {
+    width: 80%;
+    height: auto;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  
+  .application .appli1 h1 {
+    font-size: 30px;
+  }
+  
+  .application .appli1 p {
+     width: 100%;
+    height: auto;
+    font-size: 13px;
+    opacity: 0.7;
+  }
+
+}

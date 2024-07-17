@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+/* font-family: "Baumans", system-ui; */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+/* font-family: "Aclonica", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/***** RESULT_SECTION *****/
+
+.result {
+  width: 100%;
+  height: 100%;
+  font-family: "Baumans", system-ui; 
+  background: #DEFFEE;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/***** RESULT_HERO_SECTION *****/
+
+.result .result_hero {
+  width: 100%;
+  height: 100vh;
+  padding-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result .result_hero .result_hero_heading {
+  overflow: hidden;
+}
+
+.result .result_hero .result_hero_heading h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.result .result_hero .result_hero_heading p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(97, 198, 148, 1);
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.result .result_hero .result_form {
+  width: 800px;
+  height: 1000px;
+  padding-top: 180px;
+  border-radius: 20px;
+}
+
+.result .result_hero .result_form 
+.result_field {
+  width: 100%;
+  height: 85px;
+  margin: 50px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.3);
+  border-radius: 20px;
+  transition: 1s ease;
+}
+
+.result .result_hero .result_form
+.result_field:hover {
+  border: 1px solid rgba(67, 172, 120, 0.8);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+}
+
+.result .result_hero .result_form 
+.result_field input {
+  width: 90%;
+  height: 95%;
+  margin-left: 25px;
+  font-size: 29px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.result .result_hero .result_form 
+.result_field span {
+  font-size: 30px;
+  margin-right: 18px;
+}
+
+.result .result_hero .result_form
+.result_field_class {
+  width: 100%;
+  height: 85px;
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.3);
+  border-radius: 20px;
+  transition: 1s ease;
+}
+
+.result .result_hero .result_form
+.result_field_class:hover {
+  border: 1px solid rgba(67, 172, 120, 0.8);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+}
+
+.result .result_hero .result_form 
+.result_field_class label {
+  font-size: 29px;
+  margin-left: 25px;
+  opacity: 0.6;
+}
+
+.result .result_hero .result_form 
+.result_field_class small {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  background: rgba(67, 172, 120, 0.1);
+  margin-right: 10px;
+  transition: 1s ease; 
+  cursor: pointer;
+}
+
+.result .result_hero .result_form
+.result_field_class small:hover {
+  background: rgba(67, 172, 120, 0.3);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.4);
+}
+
+.result .result_hero .result_form 
+.result_field_class span {
+  font-size: 30px;
+  margin-right: 18px;
+  opacity: 0.7;
+}
+
+.result .result_hero .result_form  
+.result_btn {
+  width: 80%;
+  height: 75px;
+  margin-top: 100px;
+  margin-left: 10%;
+  background: rgba(67, 172, 120, 0.1);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  transition: 1s ease;
+}
+
+.result .result_hero .result_form  
+.result_btn:hover {
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.9);
+}
+
+.result .result_hero .result_form  
+.result_btn button {
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.result .result_hero .indicator {
+  position: absolute;
+  bottom: 250px;
+  right: 60px;
+  cursor: pointer;
+  display: none;
+}
+
+.result .result_hero .indicator a{
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.7);
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/***** STUDENTS_RESULT *****/
+
+.result .students_result {
+  width: 100%;
+  height: 110vh;
+  padding-top: 50px;
+  display: none;
+}
+
+.result .students_result 
+.students_result_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.result .students_result 
+.students_result_heading h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.result .students_result 
+.student_info {
+  width: 90%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 90px;
+  margin-left: 5%;
+}
+
+.result .students_result 
+.student_info .info_heading {
+  overflow: hidden;
+}
+
+.result .students_result
+.student_info .info_heading h1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.result .students_result
+.student_info .student_name h2{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.result .students_result
+.student_info .student_name h2 i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: rgba(67, 172, 120,0.2);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+}
+
+.result .students_result
+.student_info .student_class h2{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.result .students_result
+.student_info .student_class h2 i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: rgba(67, 172, 120,0.2);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+}
+
+.result .students_result
+.student_info .student_roll h2{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.result .students_result
+.student_info .student_roll h2 i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: rgba(67, 172, 120,0.2);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+}
+
+.result .students_result 
+.students_result_publish {
+  width: 80%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.result .students_result 
+.students_result_publish h1 {
+  font-family: "Aclonica", sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.result .students_result 
+.students_result_publish table {
+  width: 100%;
+  height: 80%;
+  border: 1px solid #000;
+  font-size: 25px;
+}
+
+.result .students_result 
+.students_result_publish table th {
+  font-weight: 700;
+}
+
+.result .students_result 
+.students_result_publish table, th, td {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 500;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.result .students_result 
+.students_result_publish table
+.total_bold td {
+  font-weight: bold;
+}
+
+.result .students_result a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}  
+
+.result .students_result a button {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: transparent;
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 0.5);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.result .students_result a button i {
+  font-size: 30px;
+}
+
+.result .students_result a button:hover {
+  background: rgba(67, 172, 120, 0.2);
+  box-shadow: 0 4px 16px rgba(67, 172, 120, 7);
+}
+
+/***** MOBILE_DEVICE *****/
+
+@media only screen and (max-width: 600px) {
+  .result {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+ /***** RESULT_HERO_RESPONSIVE *****/
+
+  .result .result_hero {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .result .result_hero .result_hero_heading {
+    margin-top: -270px;
+  }
+  
+  .result .result_hero .result_hero_heading h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .result .result_hero .result_hero_heading p {
+    font-size: 10px;
+  }
+  
+  .result .result_hero .result_form {
+    width: 410px;
+    height: 600px;
+    margin-top: -150px;
+  }
+  
+  .result .result_hero .result_form
+  .result_field_class {
+    width: 100%;
+    height: 60px;
+  }
+  
+  .result .result_hero .result_form 
+  .result_field_class label {
+    font-size: 16px;
+    margin-left: 25px;
+    opacity: 0.6;
+  }
+  
+  .result .result_hero .result_form 
+  .result_field_class small {
+    width: 40px;
+    height: 70%;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+  
+  .result .result_hero .result_form 
+  .result_field_class span {
+    font-size: 18px;
+  } 
+  
+  .result .result_hero .result_form 
+  .result_field {
+    width: 100%;
+    height: 60px;
+    margin-top: -15px;
+  }
+  
+  .result .result_hero .result_form form
+  .rl {
+    position: relative;
+    top: -15px;
+  }
+  
+  .result .result_hero .result_form 
+  .result_field input {
+    width: 90%;
+    height: 95%;
+    font-size: 16px;
+  }
+  
+  .result .result_hero .result_form 
+  .result_field span {
+    font-size: 18px;
+  }
+  
+  .result .result_hero .result_form  
+  .result_btn {
+    width: 80%;
+    height: 50px;
+    margin-top: -30px;
+  }
+  
+  .result .result_hero .result_form  
+  .result_btn button {
+    font-size: 16px;
+  }
+  
+  .result .result_hero .indicator {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+  }
+
+  .result .result_hero .indicator a {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+  
+ /***** STUDENTS_RESULT_RESPONSIVE *****/
+ 
+  .result .students_result {
+    width: 100%;
+    height: 140vh;
+  }
+  
+  .result .students_result 
+  .students_result_heading h1 {
+    font-size: 35px;
+  }
+  
+  .result .students_result 
+  .student_info {
+    width: 90%;
+    height: 10vh;
+    margin-bottom: 90px;
+  }
+  
+  .result .students_result
+  .student_info .info_heading h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .result .students_result
+  .student_info .student_name h2{
+    font-size: 12px;
+  }
+  
+  .result .students_result
+  .student_info .student_name h2 i {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .result .students_result
+  .student_info .student_class h2{
+    font-size: 12px;
+  }
+  
+  .result .students_result
+  .student_info .student_class h2 i {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .result .students_result
+  .student_info .student_roll h2{
+    font-size: 12px;
+  }
+  
+  .result .students_result
+  .student_info .student_roll h2 i {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .result .students_result 
+  .students_result_publish {
+    width: 80%;
+    height: 60vh;
+  }
+  
+  .result .students_result 
+  .students_result_publish h1 {
+    font-size: 25px;
+  }
+  
+  .result .students_result 
+  .students_result_publish table {
+    width: 100%;
+    height: 80%;
+    font-size: 13px;
+  }
+  
+  .result .students_result 
+  .students_result_publish table th {
+    font-weight: 600;
+  }
+  
+  .result .students_result a button {
+    width: 350px;
+    height: 50px;
+    font-size: 13px;
+  }
+  
+  .result .students_result a button i {
+    font-size: 19px;
+  }
+}

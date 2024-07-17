@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+/* font-family: "Baumans", system-ui; */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+/* font-family: "Aclonica", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  user-select: none;
+}
+
+.homeBg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  font-weight: 100;
+  font-family: "Baumans", system-ui;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+/***** NAVIGATION_BAR *****/
+
+.header {
+  width: 100%;
+  padding: 30px 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Baumans", system-ui;
+  padding: 5px 15px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.header ul a:hover {
+  background: #000;
+}
+
+.header ul a:nth-child(6) {
+  font-family: "Baumans", system-ui;
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.header ul a:nth-child(6):hover 
+button {
+  background: transparent;
+}
+
+.header ul a:nth-child(6):hover  {
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+.header ul button {
+  color: #fff;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/***** SMALL_NAVIGATION_BAR *****/
+
+.small_header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: none;
+  overflow: hidden;
+}
+
+.small_header .header_head {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  z-index: 109;
+}
+
+.small_header .header_head .sm_logo {
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.small_header .header_head
+.sm_logo h1 {
+  display: flex;
+  color: #fff;
+}
+
+.small_header .header_head .menu {
+  width: 80px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.small_header .header_head .menu .icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_header .header_head .menu .icons .i {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_header .header_head
+.menu .icons .menu_icon {
+  width: 60px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.small_header .header_head
+.menu .icons .cross_icon {
+  position: relative;
+  top: -425px;
+  color: #fff;
+}
+
+.small_header .menu_list {
+  width: 424px;
+  height: 100vh;
+  position: fixed;
+  right: -425px;
+  top: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 99;
+}
+
+.small_header .menu_list ul {
+  list-style: none;
+  position: relative;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+}
+
+.small_header .menu_list ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px 0;
+  transition: 1s ease;
+}
+
+.small_header .menu_list ul li a:hover {
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.small_header .menu_list ul li a span {
+  font-family: "Aclonica", sans-serif;
+}
+
+.small_header .menu_list ul a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px 0;
+}
+
+.small_header .menu_list ul a .singUpBtn_sm {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.small_header .menu_list ul a 
+.singUpBtn_sm:hover {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #fff;
+}
+
+.small_header .menu_list ul a .singUpBtn_sm span {
+  font-family: "Aclonica", sans-serif;
+}
+
+.small_header .menu_list ul a .singUpBtn_sm i {
+  margin-left: 5px;
+}
+
+/***** HERO *****/
+
+.hero {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.hero .title .t1,
+.t2 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero .s_name {
+  position: relative;
+  top: 80px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.hero .s_name h1:nth-child(2) {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.hero .summery {
+  width: 80%;
+  position: relative;
+  top: 120px;
+}
+
+ main .hero  p {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero .hero_btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  position: relative;
+  top: 140px;
+}
+
+.hero .hero_btn a {
+  text-decoration: none;
+}
+
+.hero .hero_btn a button {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Baumans", system-ui;
+  font-size: 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding-left: 76px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.hero .hero_btn a button i {
+  font-size: 65px;
+  margin-top: 1px;
+  margin-left: 40px;
+}
+
+.hero .hero_btn a button:hover {
+  background: #000;
+  transform: rotate(-5deg)scale(1.1);
+  border: none;
+}
+
+/***** FOOTER *****/
+
+main footer {
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+main footer h4 {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 100;
+  color: #fff;
+}
+
+/***** MOBILE_DEVICE *****/
+
+@media only screen and (max-width: 600px) {
+  
+  main {
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+  
+  .header {
+    display: none;
+  }
+
+  .small_header {
+    display: block;
+  }
+  
+  main .small_header .header_head
+  .sm_logo h1 {
+    font-size: 30px;
+  }
+  
+  main .hero {
+    margin-top: -100px;
+  }
+  
+  main .hero .title {
+    margin-top: 50px;
+  }
+  
+  main .hero .title .t1, .t2 {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  
+  main .s_name h1 span {
+    font-size: 22px;
+  }
+ 
+  main .s_name h1:nth-child(2) span{
+    font-size: 14px;
+    margin-top: -20px;
+  }
+ 
+  main .summery p {
+    font-size: 10px;
+    opacity: 0.8;
+    line-height: 15px;
+  }
+ 
+  main .hero .hero_btn a button {
+    width: 100px;
+    height: 40px;
+    margin-left: 50px;
+    padding-left: 33px;
+    font-size: 15px;
+  }
+  
+  .hero .hero_btn a button i {
+    font-size: 52px;
+    margin-top: 1px;
+    margin-left: 3px;
+  }
+  
+  .foot {
+    font-size: 8px;
+    opacity: 0.7;
+  }
+}
